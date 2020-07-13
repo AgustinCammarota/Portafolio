@@ -1,5 +1,5 @@
 body {
-    background: #e9ecef;
+    background: rgba(224, 224, 234, 0.83);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -10,7 +10,7 @@ header {
 header .nav {
     min-height: 80px;
     overflow: hidden;
-    background: white;
+    background-color: rgba(27, 30, 33, 0.92);
 }
 
 header .logo h2,
@@ -24,14 +24,15 @@ header .logo p {
 header .logo h2 {
     font-weight: 800;
     text-transform: uppercase;
+    color: white;
 }
 
 header .logo .icono {
-    color: #bfbfbf;
+    color: #bab8b8;
 }
 
 header .logo p {
-    color: #777777;
+    color: #bab8b8;
 }
 
 header .menu {
@@ -50,11 +51,12 @@ header .menu a div span {
 }
 
 header .menu .c-1 {
-    background: #3da5e2;
+    background-color: rgb(168, 169, 177);
+
 }
 
 header .menu .c-2 {
-    background: #005385;
+    background-color: rgb(103, 113, 153);
 }
 
 header .menu .c-3 {
@@ -62,11 +64,12 @@ header .menu .c-3 {
 }
 
 header .menu .c-1:hover {
-    background: #1ba0ef;
+    background-color: rgb(148, 154, 170);
+
 }
 
 header .menu .c-2:hover {
-    background: #00426a;
+    background-color: rgba(129, 134, 156, 0.73);
 }
 
 header .menu .c-3:hover {
@@ -83,14 +86,14 @@ header .menu .c-3:hover {
 
 .portafolio {
     background: white;
-    border-top: 5px solid #3da5e2;
+    border-top: 5px solid rgba(27, 30, 33, 0.92);
     padding: 0 20px;
 }
 
 .portafolio .titulo {
     padding: 40px 0;
     text-align: center;
-    color: #3da5e2;
+    color: #003855;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
@@ -102,7 +105,7 @@ header .menu .c-3:hover {
 }
 
 .portafolio .galeria .contenedor-imagen a {
-    background: #3da5e2;
+    background-color: rgb(207, 216, 224);
     display: inline-block;
 }
 
@@ -141,7 +144,7 @@ header .menu .c-3:hover {
 }
 
 .acerca-de .info .titulo {
-    color: #005385;
+    color: #003855;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 40px;
@@ -155,9 +158,23 @@ header .menu .c-3:hover {
 .acerca-de .info .label {
     font-size: 18px;
     font-weight: 600;
-    color: #005385;
-    margin-bottom: 10px;
+    color: #003855;
+    margin-bottom: 0;
 }
+
+.acerca-de .info .progress {
+    background: #767272;
+    border-radius: 0;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+.acerca-de .info .progress .progress-bar {
+    line-height: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
+
 
 .contacto {
     padding: 40px 0;
@@ -173,35 +190,6 @@ header .menu .c-3:hover {
     font-size: 40px;
     margin-bottom: 40px;
     text-align: center;
-}
-
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario textarea {
-    padding: 15px;
-    border: none;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.formulario textarea {
-    height: 150px;
-    min-height: 150px;
-    max-height: 250px;
-}
-
-.formulario .boton {
-    border: none;
-    padding: 7px 30px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    width: auto;
-    border-radius: 3px;
-}
-
-.formulario .boton:hover {
-    background: #1ba0ef;
 }
 
 .redes-sociales {
@@ -234,21 +222,6 @@ header .menu .c-3:hover {
 .redes-sociales .skype:hover {background-color: #0169a3}
 
 
-
-/*.acerca-de .info .progress {*/
-/*    background: #005385;*/
-/*    border-radius: 0;*/
-/*    margin-bottom: 15px;*/
-/*    height: 25px;*/
-/*}*/
-
-/*.acerca-de .info .progress .progress-bar {*/
-/*    background: #3da5e2;*/
-/*    line-height: 25px;*/
-/*    text-align: left;*/
-/*    padding-left: 20px;*/
-/*}*/
-
 @media screen and (max-width: 1199px){}
 
 @media screen and (max-width: 991px){
@@ -264,14 +237,17 @@ header .menu .c-3:hover {
     .menu a div {
         width: 100%;
     }
-    .portafolio .galeria .contenedor-imagen:nth-child(1) {order: 1;}
-    .portafolio .galeria .contenedor-imagen:nth-child(2) {order: 3;}
-    .portafolio .galeria .contenedor-imagen:nth-child(3) {order: 7;}
-    .portafolio .galeria .contenedor-imagen:nth-child(4) {order: 2;}
-    .portafolio .galeria .contenedor-imagen:nth-child(5) {order: 6;}
-    .portafolio .galeria .contenedor-imagen:nth-child(6) {order: 4;}
-    .portafolio .galeria .contenedor-imagen:nth-child(7) {order: 8;}
-    .portafolio .galeria .contenedor-imagen:nth-child(8) {order: 5;}
+    .portafolio .galeria .contenedor-imagen:nth-child(1) {order: 2;}
+    .portafolio .galeria .contenedor-imagen:nth-child(2) {order: 1;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3) {order: 4;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4) {order: 10;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5) {order: 7;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6) {order: 12;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7) {order: 5;}
+    .portafolio .galeria .contenedor-imagen:nth-child(8) {order: 6;}
+    .portafolio .galeria .contenedor-imagen:nth-child(9) {order: 8;}
+    .portafolio .galeria .contenedor-imagen:nth-child(10) {order: 9;}
+    .portafolio .galeria .contenedor-imagen:nth-child(11) {order: 3;}
 
     .modal .modal-dialog {
         width: 90%;
